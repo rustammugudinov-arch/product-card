@@ -1,0 +1,113 @@
+* {
+    font-family: Montserrat, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #515076;
+    font-weight: 400;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1110px;
+    gap: 45px;
+    margin: 0 auto;
+}
+
+.title {
+    width: 846px;
+    left: 217px;
+    padding-top: 220px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 78px;
+    text-align: center;
+    color: #515076;
+}
+
+.bg-image {
+background-image: url(/img/bg_dandelions.png);
+background-repeat: no-repeat;
+}
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 42px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.product-card {
+    background-color: #F7F7FA;
+    width: 340px;
+    height: 573px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+}
+
+.card-image {
+display: block;
+width: 290px;
+height: 245px;
+}
+
+.tags {
+    text-transform: uppercase;
+    color: #A5A3B9;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-name {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.card-description {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.card-ingridients {
+    margin-top: 5px;
+    list-style-type: circle;
+    padding-left: 13px;
+}
+
+.card-ingridient {
+    margin-bottom: 5px;
+}
+
+.card-price {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.price-label {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.price-value {
+font-size: 20px;
+line-height: 24px;
+}
