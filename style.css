@@ -30,8 +30,8 @@
 }
 
 .bg-image {
-background-image: url(/img/bg_dandelions.png);
-background-repeat: no-repeat;
+    background-image: url(/img/bg_dandelions.png);
+    background-repeat: no-repeat;
 }
 
 .product-list {
@@ -56,9 +56,9 @@ background-repeat: no-repeat;
 }
 
 .card-image {
-display: block;
-width: 290px;
-height: 245px;
+    display: block;
+    width: 290px;
+    height: 245px;
 }
 
 .tags {
@@ -108,6 +108,6 @@ height: 245px;
 }
 
 .price-value {
-font-size: 20px;
-line-height: 24px;
+    font-size: 20px;
+    line-height: 24px;
 }
