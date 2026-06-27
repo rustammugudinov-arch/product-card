@@ -46,10 +46,10 @@ function outputConsoleLog(message) {
 
 //Вывод текста в консоль при наведении мыши
 
-const consoleTitle = document.querySelector('.title');
+const title = document.querySelector('.title');
 
-consoleTitle.addEventListener('mouseover', function () {
-  console.log(consoleTitle.textContent);
+title.addEventListener('mouseover', function () {
+  console.log(title.textContent);
 });
 
 //Кнопка смены цвета
@@ -57,9 +57,5 @@ consoleTitle.addEventListener('mouseover', function () {
 const toggleButton = document.querySelector('#toggle-button');
 
 toggleButton.addEventListener('click', () => {
-    toggleButton.classList.toggle('toggle__button__orange');
-});
-
-toggleButton.addEventListener('click', () => {
-    toggleButton.classList.toggle('toggle__button__blue');
+    toggleButton.classList.toggle('toggle__button');
 });

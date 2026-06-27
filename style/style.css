@@ -10,12 +10,7 @@
 }
 
 
-.toggle__button__orange {
+.toggle__button {
     background-color: rgb(163, 113, 53);
     color: #deafaf;
-}
-
-.toggle__button__blue {
-    background-color: rgb(40, 160, 193);
-    color: #230505;
 }
