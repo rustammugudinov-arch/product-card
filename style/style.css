@@ -9,8 +9,23 @@
     font-weight: 400;
 }
 
+button {
+    height: 50px;
+    color: #fff;
+    background-color: #70416f;
+    border: purple;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
 
 .toggle__button {
-    background-color: rgb(163, 113, 53);
-    color: #deafaf;
+    color: #fff;
+    background-color: #a0740e;
 }
