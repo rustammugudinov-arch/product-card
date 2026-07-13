@@ -138,7 +138,7 @@ console.log(mergeBooksArrays);
 
 //10. Добавил дополнительное свойство в массив используя метод массива map.
 
-function showRareBooks(object) {
+function makedRareBooks(object) {
     if (object.year > 2000) {
         object.isRare = true
     } else {
@@ -147,6 +147,6 @@ function showRareBooks(object) {
     return object;
 }
 
-mergeBooksArrays.map(showRareBooks);
+mergeBooksArrays.map(makedRareBooks);
 
 console.log(mergeBooksArrays);
