@@ -4,9 +4,9 @@ import { commentsList } from "./comments.js";
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const numbersUpdate = numbers.filter(number => number > 4);
+const filteredNumbers = numbers.filter(number => number > 4);
 
-console.log(numbersUpdate);
+console.log(filteredNumbers);
 
 // 1.3 Создал массив и использовал метод includes.
 
@@ -29,37 +29,36 @@ console.log(fruitGarden);
 
 // 2.7 Выбрал коментарии с почтой com
 
-const commentsCom = commentsList.filter(comment =>
-    comment.email.includes('.com'));
+const commentsCom = commentsList.filter(comment => comment.email.includes('.com'));
 
 console.log(commentsCom);
 
 // 2.8 Перебрал массив.
 
-const commentsListId = commentsList.map(comment => ({
+const commentsUpdatedPostId = commentsList.map(comment => ({
     ...comment,
     postId: comment.id <= 5 ? 2 : 1
 }));
 
-console.log(commentsListId);
+console.log(commentsUpdatedPostId);
 
 // 2.9 Перебрал массив, оставив только свойства id и name.
 
-const commentsIdName = commentsList.map(comment => ({
+const commentNames = commentsList.map(comment => ({
     id: comment.id,
     name: comment.name
 }));
 
-console.log(commentsIdName);
+console.log(commentNames);
 
 // 2.10 Добавил свойство isInvalid в массив.
 
-const checkLenghtComments = commentsList.map(comment => ({
+const validatedComments = commentsList.map(comment => ({
     ...comment,
     isInvalid: comment.body.length > 180
 }));
 
-console.log(checkLenghtComments);
+console.log(validatedComments);
 
 // 3.11 Использовал метод массива Reduce и Map.
 
