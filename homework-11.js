@@ -54,14 +54,7 @@ if (regForm) {
 
         
         const formData = new FormData(regForm);
-        user = {
-            name: formData.get('name').trim(),
-            surName: formData.get('surName').trim(),
-            dateOfBirth: formData.get('dateOfBirth'),
-            login: formData.get('login').trim(),
-            password: passwordInput.value, 
-            createdAt: new Date() 
-        };
+        const user = Object.fromEntries(formData.entries());
 
         console.log(user);
 
