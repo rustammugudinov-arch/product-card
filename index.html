@@ -19,111 +19,103 @@
     <button id="open-google">Открыть страницу Google.com</button>
     <button id="output-console-log">Вывести сообщение в консоль лог</button>
     <button id="toggle-button">Кнопка смены цвета</button>
-    <div class="products bg-image">
-    <h1 class="title">Выбери свой продукт</h1>
-    <ul class="product-list products">
-        <li class="card">
-            <img src="img/mousse.png" alt="Увлажняющий мусс" class="card__image"/>
-            <span class="card__tags">для нормальной кожи</span>
-            <h2 class="card__name">Увлажняющий мусс</h2>
-            <p class="card__description">Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.</p>
+    <div class="products-conteiner bg-image">
+        <h1 class="title">Выбери свой продукт</h1>
+        <ul class="product-list" class="card">
 
-            <span>Состав: </span>
+        <template id="product-card-template">
+            <li class="card">
+                <img src="" alt="" class="card__image"/>
+                <span class="card__tags"></span>
+                <h2 class="card__name"></h2>
+                <p class="card__description"></p>
+                <span>Состав: </span>
+                <ul class="card__ingridients"></ul>
+                <div class="card__price">
+                    <span class="card__price__label">Цена:</span>
+                    <span class="card__price__value"></span>
+                </div>
+            </li>
+        </template>
+        </ul>
+    </div>
 
-            <ul class="card__ingridients">
-                <li class="card__ingridient">активные натуральные комплексы</li>
-                <li class="card__ingridient">витамины С, А, РР, В И Е</li>
-                <li class="card__ingridient">солнцезащитные компоненты</li>
-            </ul>
-            <div class="card__price">
-                <span class="card__price__label">Цена:</span>
-                <span class="card__price__value">2 750 &#8381</span>
+    <footer class="footer">
+        <div class="footer__conteiner">
+
+            <div class="footer__about">
+                <h2 class="footer__logo">Product Cards</h2>
+                <p class="footer__text">У Нас Самые Лучшие Продукты Для Кожи!</p>
+                <div class="footer__socials">
+
+                    <a class="footer__social__link" href="#" target="_blank">
+                        <img class="footer__social__icon" src="img/telegram.png">
+                    </a>
+
+                    <a class="footer__social__link" href="#" target="_blank">
+                        <img class="footer__social__icon" src="img/vk.png">
+                    </a>
+
+                </div>
             </div>
-        </li>
 
-        <li class="card">
-            <img src="img/moisturising_mask.png" alt="Увлажняющая маска" class="card__image"/>
-            <span class="card__tags">для нормальной кожи</span>
-            <h2 class="card__name">Увлажняющая маска</h2>
-            <p class="card__description">Способствует удерживанию влаги в верхних слоях кожи.</p>
-
-            <span>Состав: </span>
-
-            <ul class="card__ingridients">
-                <li class="card__ingridient">воски</li>
-                <li class="card__ingridient">минералы</li>
-                <li class="card__ingridient">маска</li>
-            </ul>
-
-            <div class="card__price">
-                <span class="card__price__label">Цена:</span>
-                <span class="card__price__value">3 500 &#8381</span>
+            <div class="footer__subscribe">
+                <label for="footer-email" class="footer__label">Подпишись на наши акции:</label>
+                <form id="footer-form-center">
+                    <input type="email" id="footer-email" name="userEmail" required class="footer__form__input" placeholder="Введи Email...">
+                    <button type="submit" id="footer-button">Подписаться</button>
+                    <p id="subscribe-error" class="error__message"></p>
+                </form>
+                <button id="reg-button" class="reg__button">Регистрация</button>
             </div>
-        </li>
-
-        <li class="card">
-            <img src="img/washing_gel.png" alt="Гель для умывания" class="card__image"/>
-            <span class="card__tags">для нормальной кожи</span>
-            <h2 class="card__name">Гель для умывания</h2>
-            <p class="card__description">Интенсивно очищает, не повреждает защитный барьер кожи.</p>
-
-            <span>Состав: </span>
-
-            <ul class="card__ingridients">
-                <li class="card__ingridient">минералы</li>
-                <li class="card__ingridient">витамины С, А, РР, В И Е</li>
-                <li class="card__ingridient">солнцезащитные компоненты</li>
-            </ul>
-
-            <div class="card__price">
-            <span class="card__price__label">Цена:</span>
-            <span class="card__price__value">1 650 &#8381</span>
+            
+            <div class="footer__nav">
+                <h3 class="footer__nav__title">Быстрые ссылки</h3>
+                <nav>
+                    <ul class="footer__nav__list">
+                        <li class="footer__nav__item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li class="footer__nav__item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </li>
 
-        <li class="card">
-            <img src="img/gift_set1.png" alt="Подарочный набор №1" class="card__image"/>
-            <span class="card__tags">для нормальной кожи</span>
-            <h2 class="card__name">Подарочный набор №1</h2>
-            <p class="card__description">Набор, состоящий из увлажняющего крема и маски.</p>
-
-            <span>Состав: </span>
-
-            <ul class="card__ingridients">
-                <li class="card__ingridient">воски</li>
-                <li class="card__ingridient">минералы</li>
-                <li class="card__ingridient">маска</li>
-            </ul>
-
-            <div class="card__price">
-            <span class="card__price__label">Цена:</span>
-            <span class="card__price__value">4 750 &#8381</span>
+            <div class="footer__bottom">
+                <p>www.product-cards.com©all rights reserved</p>
             </div>
-        </li>
 
-        <li class="card">
-            <img src="img/gift_set5.png" alt="Подарочный набор №5" class="card__image"/>
-            <span class="card__tags">для нормальной кожи</span>
-            <h2 class="card__name">Подарочный набор №5</h2>
-            <p class="card__description">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+        </div>
+    </footer>
 
-            <span>Состав: </span>
+    <div id="modal-overlay" class="modal__overlay">
+        <div class="modal__window">
+            <button id="close-modal-button" class="close__button">&times;</button>
 
-            <ul class="card__ingridients">
-                <li class="card__ingridient">воски</li>
-                <li class="card__ingridient">минералы</li>
-                <li class="card__ingridient">маска</li>
-            </ul>
+            <form id="registration-form">
+                <h3>Регистрация</h3>
+                <input type="text" placeholder="Имя" name="name" required>
+                <input type="text" placeholder="Фамилия" name="surName" required>
+                <input type="date" placeholder="Дата рождения" name="dateOfBirth" required>
+                <input type="text" placeholder="Логин" name="login" required>
+                <input type="password" id="reg-password" placeholder="Пароль" name="password" required>
+                <input type="password" id="reg-confirm" placeholder="Повторите пароль" name="passwordConfirm" required>
+                <p id="reg-error" class="error__message"></p>
+                <button type="submit" class="button__submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
 
-            <div class="card__price">
-            <span class="card__price__label">Цена:</span>
-            <span class="card__price__value">7 520 &#8381</span>
-            </div>
-        </li>
-    </ul>
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
-    <script type="module" src="homework-9.js"></script>
+    <script src="homework-9.js" type="module"></script>
+    <script src="homework-10.js" type="module"></script>
+    <script src="homework-11.js" type="module"></script>
 </body>
 </html>
