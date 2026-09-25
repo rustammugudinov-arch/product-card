@@ -29,7 +29,7 @@ if (openButton && modalOverlay && closeButton) {
 
     closeButton.addEventListener('click', () => {
         modalOverlay.style.display = 'none';
-        modalOverlay.querySelector('.modal_window').classList.remove('modal-showed');
+        modalOverlay.querySelector('.modal__window').classList.remove('modal-showed');
     });
 }
 
