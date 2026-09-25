@@ -4,12 +4,12 @@ export class Form {
     }
 
     getValues() {
-        if(!this.element) return{};
+        if (!this.element) return{};
         return Object.fromEntries(new FormData(this.element));
     }
 
     isValid() {
-        if(!this.element) return false;
+        if (!this.element) return false;
         return this.element.checkValidity();
     }
 
