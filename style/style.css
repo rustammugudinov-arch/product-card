@@ -195,6 +195,10 @@ a {
     z-index: 1000;
 }
 
+.modal__overlay.modal-showed {
+    display: flex;
+}
+
 .modal__window {
     background-color: #ffffff;
     max-width: 400px;

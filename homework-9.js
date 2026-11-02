@@ -74,8 +74,8 @@ console.log(emailsByMap);
 
 // 3.12 Использовал методы toString() и join().
 
-const emailsToString = emailsMap.toString();
+const emailsToString = emailsByMap.toString();
 console.log(emailsToString);
 
-const emailsByJoin = emailsMap.join(', ');
+const emailsByJoin = emailsByMap.join(', ');
 console.log(emailsByJoin);
